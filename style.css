@@ -1,27 +1,24 @@
-/* Custom Profile Button Style */
 .social-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
-    width: 300px; /* Matches your GitHub width */
+    width: 300px; 
     height: 60px;
-    background-color: #0077b5; /* Official LinkedIn Blue */
+    background-color: #0077b5; 
     color: #ffffff !important;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 15px; /* Matches your GitHub border radius */
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     /*transition: transform 0.2s, background-color 0.2s;*/
 }
 
-/* Make the button pop when hovered over */
 .social-button:hover {
     transform: translateY(-2px);
     background-color: #005582; /* Darker blue on hover */
 }
 
-/* Size the icon inside the button */
 .linkedin-icon {
     width: 30px;
     height: 30px;
@@ -48,30 +45,29 @@ body {
     /*transition: background-color 0.3s, color 0.3s;*/
 }
 
-/* Style the outer LinkedIn wrapper box */
 div.badge-base.LI-profile-badge {
     background-color: transparent !important;
-    border: none !important;              /* Remove the tricky standard border */
-    border-radius: 14px !important;       /* Keeps the corners nice and curved */
+    border: none !important;              
+    border-radius: 14px !important;      
     display: inline-block;
     box-sizing: border-box;
     position: relative;
-    overflow: hidden !important;          /* Keeps scrollbars from appearing */
+    overflow: hidden !important;       
 
-    /* The Fix: Draw a clean white border slightly inside the card boundaries */
+ 
     outline: 4px solid #ffffff !important;
-    outline-offset: -4px !important;     /* Moves it inward to bury LinkedIn's lines */
+    outline-offset: -4px !important;     
 }
 
-/* Force any hidden scrollbars to completely vanish if the browser tries to show them */
+
 div.badge-base.LI-profile-badge::-webkit-scrollbar {
     display: none !important;
 }
-/* Push the GitHub link to line up with the LinkedIn card */
+
 a.social-button, 
 body > a[href*="github.com"] {
     margin-left: 0px !important;
-    display: inline-block; /* Allows the margin to apply correctly */
+    display: inline-block;
 }
 
 
@@ -115,5 +111,17 @@ body > a[href*="github.com"] {
 
 .connect-button:hover {
     transform: translateY(-2px);
-    background-color: #a1a1a1;
+    background-color: #ffffff55;
 }
+
+.navbar {
+    background-color: rgba(0, 14, 123, 0.253);
+    border-radius: 15px;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    margin: 10px 5px 0 5px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 6px rgb(0, 0, 0)
+}
+
