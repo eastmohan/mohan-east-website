@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# Package manager files (keep package-lock.json for npm)
+# package-lock.json should be committed for npm projects
+yarn.lock
+pnpm-lock.yaml
+bun.lockb
+
+# Build outputs
+dist/
+build/
+.next/
+.turbo/
+out/
+
+# Cache directories
+.cache/
+.vercel/
+.parcel-cache/
+
+# Temporary files
+*.log
+.DS_Store
+*.swp
+*.swo
+*~
