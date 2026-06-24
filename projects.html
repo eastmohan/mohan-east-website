@@ -20,31 +20,40 @@
                 <h3><u>Hardware:</u></h3>
                 <p>These are physical projects I have designed and built.</p>
             </br>
-                <div class="hardware-box">
-                    <h3>Custom Macropad</h3>
-                    <p><b>TL;DR: I made a fully custom macropad with 6 keys, a small screen, and a rotary encoder. I designed the PCB from scratch, made a case for the macropad, and wrote the firmware.</b></p>
-                    <p>This is a 6-key macropad using the Seeed XIAO-RP2040 devboard. The macropad has 6 keys, a 0.91" OLED display, a rotary encoder, and 2 RGB LEDs.</p>
-                    <p>I designed the schematic and PCB from scratch in KiCAD and made the 3D-printable case in Fusion 360. I also programmed the microcontroller as detailed below.</p>
-                    <p>Key assignments: <ul>
-                            <li>Copy</li>
-                            <li>Paste</li>
-                            <li>LEDs and OLED On/Off</li>
-                            <li>Previous Track</li>
-                            <li>Play/Pause</li>
-                            <li>Next Track</li>
-                        </ul>
-                    </p>
-                    <p>The OLED displays current media information using a Rainmeter skin, Lua script, and Python script that I made. The screen shows the artist and the track name, featuring scrolling text. The rotary encoder controls volume, and the LEDs are set to cycle through colors. This cycle is synced with the LED onboard the microcontroller.</p>
-                    <iframe src="https://www.youtube.com/embed/B0LNcNpDYtY?si=VlqQVm9EYWoRA_v_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p>Since recording this video, a few changes have been made:
-                        <ul>
-                            <li>The OLED now shows messages when a button is pressed</li>
-                            <li>The LEDs are now RGB, and the LED on the XIAO is synced with the two on the PCB</li>
-                            <li>The top left button now turns the OLED and LEDs on/off</li>
-                        </ul>
-                    </p>
-                    <h4>Learn more on my GitHub: <a href="https://github.com/eastmohan/macropad">https://github.com/eastmohan/macropad</a></h4>
-                </div>
+            
+<details class="hardware-box">
+       
+    <summary class="project-header">
+        <h3>Custom Macropad</h3>
+        <p><b>TL;DR: I made a fully custom macropad with 6 keys, a small screen, and a rotary encoder. I designed the PCB from scratch, made a case for the macropad, and wrote the firmware.</b></p>
+        <span class="toggle-hint">Click card to expand project details</span>
+    </summary>
+    
+    
+    <div class="project-details-content">
+        <p>This is a 6-key macropad using the Seeed XIAO-RP2040 devboard. The macropad has 6 keys, a 0.91" OLED display, a rotary encoder, and 2 RGB LEDs.</p>
+        <p>I designed the schematic and PCB from scratch in KiCAD and made the 3D-printable case in Fusion 360. I also programmed the microcontroller as detailed below.</p>
+        <p>Key assignments:</p>
+        <ul> 
+            <li>Copy</li> 
+            <li>Paste</li> 
+            <li>LEDs and OLED On/Off</li> 
+            <li>Previous Track</li> 
+            <li>Play/Pause</li> 
+            <li>Next Track</li> 
+        </ul> 
+        <p>The OLED displays current media information using a Rainmeter skin, Lua script, and Python script that I made. The screen shows the artist and the track name, featuring scrolling text. The rotary encoder controls volume, and the LEDs are set to cycle through colors. This cycle is synced with the LED onboard the microcontroller.</p>
+        <iframe src="https://www.youtube.com/embed/B0LNcNpDYtY?si=VlqQVm9EYWoRA_v_&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
+        <p>Since recording this video, a few changes have been made:</p>
+        <ul> 
+            <li>The OLED now shows messages when a button is pressed</li> 
+            <li>The LEDs are now RGB, and the LED on the XIAO is synced with the two on the PCB</li> 
+            <li>The top left button now turns the OLED and LEDs on/off</li> 
+        </ul> 
+        <h4>Learn more on my GitHub: <a href="https://github.com/eastmohan/macropad" target="_blank">https://github.com/eastmohan/macropad</a></h4>
+    </div>
+</details>
+
             </div>
             <div class="projects-right">
                 <h4>Software:</h4>
