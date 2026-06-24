@@ -1,10 +1,10 @@
-/* Update this class to remove the background color fill */
+
 .social-button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 100%; 
-    height: auto; /* Changed from 60px to auto so it doesn't add empty vertical height */
+    height: auto; 
     text-decoration: none;
     font-weight: bold;
 }
@@ -36,20 +36,20 @@ body {
     /*transition: background-color 0.3s, color 0.3s;*/
 }
 
-/* Lock the container to match the native layout sizes of the badge script */
+
 .linkedin-container {
     display: inline-block;
-    width: 304px;          /* Match LinkedIn's internal large vertical width */
-    height: 280px;         /* Match LinkedIn's internal height to prevent bottom clipping */
+    width: 304px;          
+    height: 280px;        
     border-radius: 14px;
     outline: 4px solid #ffffff;
     outline-offset: -4px;
-    overflow: hidden;      /* Hides any internal overflow/scrolling elements */
+    overflow: hidden;     
     background-color: transparent;
     box-sizing: border-box;
 }
 
-/* Force the embedded widget to stretch to the container boundaries cleanly */
+
 .linkedin-container .LI-profile-badge,
 .linkedin-container iframe {
     width: 100% !important;
@@ -66,8 +66,6 @@ body {
 .index-content {
     padding-left: 20px;
 }
-
-
 
 div.badge-base.LI-profile-badge::-webkit-scrollbar {
     display: none !important;
