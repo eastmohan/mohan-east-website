@@ -41,19 +41,37 @@ body {
     /*transition: background-color 0.3s, color 0.3s;*/
 }
 
-div.badge-base.LI-profile-badge {
-    background-color: transparent !important;
-    border: none !important;              
-    border-radius: 14px !important;      
+/* Lock the container to match the native layout sizes of the badge script */
+.linkedin-container {
     display: inline-block;
+    width: 304px;          /* Match LinkedIn's internal large vertical width */
+    height: 280px;         /* Match LinkedIn's internal height to prevent bottom clipping */
+    border-radius: 14px;
+    outline: 4px solid #ffffff;
+    outline-offset: -4px;
+    overflow: hidden;      /* Hides any internal overflow/scrolling elements */
+    background-color: transparent;
     box-sizing: border-box;
-    position: relative;
-    overflow: hidden !important;       
-
- 
-    outline: 4px solid #ffffff !important;
-    outline-offset: -4px !important;     
 }
+
+/* Force the embedded widget to stretch to the container boundaries cleanly */
+.linkedin-container .LI-profile-badge,
+.linkedin-container iframe {
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+}
+
+.connect-content {
+    padding-left:20px;
+}
+
+.index-content {
+    padding-left: 20px;
+}
+
 
 
 div.badge-base.LI-profile-badge::-webkit-scrollbar {
@@ -153,6 +171,10 @@ body > a[href*="github.com"] {
     padding-left:40px;
 }
 
+.projects-right {
+    padding-left:20px;
+}
+
 @media (max-width:768px){
     .projects-columns{
         grid-template-columns: 1fr;
@@ -175,4 +197,11 @@ body > a[href*="github.com"] {
 .hardware-box:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba (0,0,0,0.15);
+}
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
 }
