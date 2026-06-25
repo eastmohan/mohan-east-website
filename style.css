@@ -124,6 +124,27 @@ body > a[href*="github.com"] {
     background-color: #ffffff55;
 }
 
+.extracurriculars-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width:167px;
+    height:40px;
+    background-color: #F2F5F3;
+    color: #1c1c1c;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.extracurriculars-button:hover{
+    transform:translateY(-2);
+    background-color: #ffffff55;
+}
+
 .navbar {
     background-color: rgba(195, 195, 195, 0.08);
     border-radius: 15px;
