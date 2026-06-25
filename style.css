@@ -237,7 +237,7 @@ body > a[href*="github.com"] {
 
     .projects-left, .projects-right {
         padding-left: 15px;
-        text-align: center;
+        text-align: left;
         padding-right: 15px;
     }
 
