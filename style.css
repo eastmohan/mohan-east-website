@@ -406,7 +406,7 @@ details[open] .toggle-hint {
 }
 
 html {
-    scrollbar-gutter: stable; /* Reserves the scrollbar track space permanently */
+    scrollbar-gutter: stable; 
 }
 
 .carousel-container {
