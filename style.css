@@ -397,3 +397,50 @@ details[open] .toggle-hint {
 html {
     scrollbar-gutter: stable; /* Reserves the scrollbar track space permanently */
 }
+
+.carousel-container {
+    position:relative;
+    max-width:800px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:8px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width:100%;
+}
+
+.carousel-slide {
+    min-width:100%;
+    box-sizing: border-box;
+}
+.carousel-slide img {
+  width: 100%;
+  height: 450px;
+  object-fit: contain;
+  background-color: #121626;
+  display: block;
+}
+
+.carousel-btn {
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    padding:16px;
+    cursor:pointer;
+    font-size:18px;
+    border-radius:50%;
+    transition: background-color 0.3s;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev-btn {left:10px;}
+.next-btn { right:10px;}

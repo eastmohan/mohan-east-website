@@ -55,6 +55,43 @@
         </ul> 
         <h4>Learn more on my GitHub: <a href="https://github.com/eastmohan/macropad" target="_blank">https://github.com/eastmohan/macropad</a></h4>
     </div>
+</details></br>
+<details class="hardware-box">
+
+<summary class="project-header">
+    <h3>RP2040 Devboard</h3>
+    <p><b>TL;DR: I used KiCAD to design a devboard using the RP2040 chip.</b></p>
+    <span class="toggle-hint">Click card to expand project details</span>
+</summary>
+
+<div class="project-details-content">
+    <p>I made this to get a better understanding of how devboards work. I also wanted to get better at PCB design, which this definitely helped with thanks to the high amount of traces to route in a small footprint.</p>
+    <p>I started off by making the schematic, as shown below:</p>
+    <img src="images/586902456-9a040b8f-1b1e-4b39-8f43-e7f9b866a448.png" style="max-width:100%; height:auto; display: block; margin:10px auto;">
+    <p>I then laid everything out and routed the traces in KiCAD's PCB editor:</p>
+    <img src="images/586902447-b6d986a6-c10b-42c5-b0ca-e86b64ab2910.png" style="max-width:100%; height:auto; display:block; margin:10px auto;">
+    <p>I have yet to order the PCBA for this and solder on the components that aren't SMD, but I plan to do so in the future.</p>
+    <p>The devboard looks like this, though it would also have a USB-C port at the end where it says J1.</p>
+    <img src="images/586902777-5486a490-247c-4528-8c59-89094245deab.png" style="max-width:100%; height:auto; display:block; margin:10px auto;">
+</div>
+</details></br>
+
+<details class="hardware-box">
+
+<summary class="project-header">
+    <h3>Audi R8 Model</h3>
+    <p><b>TL;DR: I used Fusion 360 to design a 3D-printable car model based on Audi R8 reference images.</b></p>
+    <span class="toggle-hint">Click card to expand project details</span>
+</summary>
+
+<div class="project-details-content">
+    <p>During my freshman year at TJHSST, I used some of my free time to design a model car based on reference imagery. I chose the Audi R8 because I thought the geometry of the car would be interesting to CAD. It was definitely a challenge, and the result isn't quite accurate, but through the process, I learned a lot about CAD and using reference images.</p>
+    <img src="images/Screenshot 2026-07-01 175620.png" style="max-width:100%; height:auto; display: block; margin:10px auto;">
+    <p>At the end of the school year, we had a project in Design & Tech to make a toy. My teacher saw my design and suggested I use it for the project. I ended up 3D printing it, including TPU wheels, and added a door and servo motors for the wheels. I then programmed it with an Arduino Uno to make it drive straight forward. It was slow and simple, but it was my first Arduino project and layed the groundwork for other projects I've done since. I would've liked to make it faster and more complex, but we had extremely limited materials and time. If I were to do it again, I think I would've designed a gear box and used one servo each for front and rear wheel drive, and a third one for steering, which could have made it more fun.</p>
+    <p>To present the project, I had to make a video. The video is below:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/t3PZKP4MMhg?si=sN2Qxr-vnm3h9F47&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>The project files are on <a href="https://github.com/eastmohan/audi-r8">GitHub</a>.</p>
+</div>
 </details>
 
             </div>
@@ -75,7 +112,7 @@
         <p>GridWatch is a system for detecting and predicting power outages around the world. GridWatch uses weather data, infrastructure risk, and expert analysis to predict and respond to grid failures faster</p>
         <p>Along with 3 of my friends, I made this project at HackTJ 13.0, the world's largest high school hackathon. We won the Terac challenge category for our integration of the Terac platform into GridWatch.</p>
         <p>The map displays 10 select locations across the US as colored dots. The colors represent the risk of an outage, shown by a color key lower on the page. Clicking on one of the dots allows the user to see the actual percentage as well as some information that led to the risk classification. Users can also enter any location into the search bar in the location dropdown to get live outage risks. However, it is important to note that predictions may be less accurate outside of the US due to differences in power infrastructure that the model may be based on.</p>
-        <img src="terac2026winner.jpg" style="max-width: 100%; height:auto; display:block; margin:10px auto;">
+        <img src="images/terac2026winner.jpg" style="max-width: 100%; height:auto; display:block; margin:10px auto;">
         <p>Since winning the hackathon as a group, I have individually made some changes:</p>
         <ul> 
             <li>Users may enter any location in the world</li> 
