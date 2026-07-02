@@ -455,3 +455,58 @@ html {
 
 .prev-btn {left:10px;}
 .next-btn { right:10px;}
+
+.home-button.active,
+.projects-button.active,
+.extracurriculars-button.active,
+.connect-button.active {
+    
+    transform: none;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.35);
+    background-color: #1c256b;
+color: white;
+border: 2px solid black;
+}
+
+.home-button.active:hover,
+.projects-button.active:hover,
+.extracurriculars-button.active:hover,
+.connect-button.active:hover {
+    transform: none;
+    background-color: #4f8cff;
+}
+
+.featured-projects {
+    margin: 20px 15px;
+    margin-left: 0px;
+}
+
+.featured-projects h2 {
+    margin-bottom: 20px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    align-items: start;
+}
+
+.featured-card {
+    background: rgba(195,195,195,.08);
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
+}
+
+.featured-card h3 {
+    margin-top: 0;
+}
