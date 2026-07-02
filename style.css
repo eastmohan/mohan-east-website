@@ -197,12 +197,23 @@ body > a[href*="github.com"] {
 }
 
 @media (max-width:768px){
-    .navbar {
-        justify-content: center;
-        gap: 12px;
-        margin: 10px auto;
-        width: calc(100%-30px);
-    }
+  
+  .navbar {
+    justify-content: center;
+    gap: 12px;
+    margin: 10px auto;
+    width: calc(100% - 30px); 
+  }
+
+ 
+  .home-button, 
+  .connect-button, 
+  .extracurriculars-button, 
+  .projects-button {
+    height: 32px;
+    font-size: 11px;
+    border-radius: 10px;
+  }
 
 .index-content{
     padding-left: 0;
